@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title style="text-align: right">&#6158;&nbsp;TestPrepOnline</title>
+    
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    
+    <script src="js/jquery-3.3.1.js"></script>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+    <link href="css/stylesheet.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    
+    <script src="js/javascript.js"></script>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    
+    <nav id="main_nav" class="navbar row navbar-static-top navbar-expand-md " >
+        
+        <div class="col-md-1 lined" style="min-width: 210px;">
+            <div class=" logo">
+                <a href="index.html"><img src="Images/logo.png"></a>
+            </div>
+        </div>
+        
+        <div class="col-md-1.5 lined dropdown" id="browse">
+            <div class="nav_box" >
+                
+                <a class="dropdown-toggle text-nowrap"  data-toggle="dropdown">
+                    Browse Topics  <span class="caret"></span>
+                </a>
+                
+                <ul class="dropdown-menu">
+                  <li class="dropdown-submenu">
+                    <a class="sub" >Gifted Tests <span class="glyphicon glyphicon-chevron-right"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="index.html">CCAT Test Prep</a></li>
+                      <li><a href="index.html">CAT4</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown-submenu">
+                    <a class="sub">School Enterance Exams<span class="glyphicon glyphicon-chevron-right"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="index.html">ISEE Practice Tests</a></li>
+                      <li><a href="index.html">SCAT Practice Tests</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown-submenu">
+                    <a class="sub" >Assessment Tests<span class="glyphicon glyphicon-chevron-right"></span> </a>
+                    <ul class="dropdown-menu">
+                      <li><a href="index.html">3rd Grade Exam</a></li>
+                      <li><a href="index.html">MAP Practice Test</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                
+            </div>
+        </div>
+        
+        <div class="col-md-5  search">         
+                <span class="glyphicon glyphicon-search"></span>
+                <input type="search" placeholder="Search test or grade" autocomplete="off">      
+        </div>
+
+        <div  id="right_bar">
+            <div class="lined col-sm-6">
+                <a class="text-nowrap">Gifted Tests</a>
+            </div>
+            <div class="col-sm-6">
+                <a class="text-nowrap">Sign In</a>
+            </div>
+        </div>
+        
+
+
+        
+    </nav>
+    
+    <nav id="phone_nav" class="navbar col-md-12" >
+        <div class="browse">
+            <span id="" class="glyphicon glyphicon-list"></span>
+        </div>
+        
+        <div class=" logo ">
+                <a href="index.html"><img src="Images/logo.png"></a>
+        </div>
+        
+
+        <div class="search">         
+            <a id="mobile_search">
+                <span  class="glyphicon glyphicon-search"></span>
+            </a>      
+      
+        </div>
+
+    </nav>
+    
+    <div class="search_filter">
+        <span class="glyphicon glyphicon-search"></span>
+        <input type="search" placeholder="Search test or grade">
+        <span id="exit_search" class="glyphicon glyphicon-remove-sign"></span>
+    </div>
+
+    <!-- Header -->
+    
+    <header class="col-md-12">
+        <div class="row">
+                <div id="pathway" class="col-md-3">Home > Gifted Tests > CogAT Practice Tests</div>
+        
+                <div class="col-lg-6 col-md-9 col-sm-12">
+                        <div class="cardHeader">
+                            <h1>CogAT Practice Tests</h1>
+                        </div>
+                        
+                        <div class="card-block">
+                            <p>Professional online resources for the CogAT Form 7</p>
+                            <p>Prepare your child for the CogAT with our fun, interactive online study packs. </p>
+                            <p>Get hundreds of CogAT questions and full-length practice tests.</p>
+                            <p>Looking for the CogAT Screening Test? Check out our CogAT Screening Practice Tests.</p>
+                        </div>   
+                    
+                        <div class="cardFooter">5 <img src="Images/star.png"> Avg. Rating</div>
+                </div>
+        </div>
+    </header>
+    
+    <!-- Select Your Pack -->
+    
+    <div class="row" id="packSelect" >
+                
+        <div id="packContainer" class="col-md-10 offset-md-2">
+            <h1 class="row">Select your pack and start practicing:</h1>
+
+            <div class="btn-group row" role="group">
+              <button type="button" id="packselector" class="btn dropdown-toggle" data-toggle="dropdown">Grade<span class="glyphicon glyphicon-chevron-down"></span></button>
+              <div  class=" dropdown-menu">
+                <button class="dropdown-item" id ="1" type="button">CogAT 1st Grade</button>
+                <button class="dropdown-item" id ="2" type="button">CogAT 2nd Grade</button>
+                <button class="dropdown-item" id ="3" type="button">CogAT 3rd Grade</button><button class="dropdown-item" id ="4" type="button">CogAT 4th Grade</button>
+                <button class="dropdown-item" id ="5" type="button">CogAT 5th Grade</button>
+                <button class="dropdown-item" id ="6" type="button">CogAT 6th Grade</button><button class="dropdown-item" id ="7" type="button">CogAT Verbal Quyestions</button>
+                <button class="dropdown-item" id ="8" type="button">CogAT Kindergarten</button>
+              </div>
+            </div>
+            <div id="removeFilter" class="hidden">Clear Filter</div>
+            <div class="row">
+                <a href="#" id="pack1" class="pack card ">
+                    <div class="pack_header">Cogat 1<sup>st</sup> Grade</div>
+                    <div class="pack_body">Ace the 3rd grade CogAT with our practice tests!</div>
+                    <div class="pack_rate"><img src="Images/star.png">(10)</div>
+                </a>
+                <a href="#" id="pack2" class="pack card ">
+                    <div class="pack_header  ">Cogat 2<sup>nd</sup> Grade</div>
+                    <div class="pack_body">Ace the 3rd grade CogAT with our practice tests!</div>
+                    <div class="pack_rate"><img src="Images/star.png">(10)</div>
+                </a>  
+                <a href="#" id="pack3" class="pack card ">
+                    <div class="pack_header ">Cogat 3<sup>rd</sup> Grade</div>
+                    <div class="pack_body">Ace the 3rd grade CogAT with our practice tests!</div>
+                    <div class="pack_rate"><img src="Images/star.png">(10)</div>
+                </a><a href="#" id="pack4" class="pack card ">
+                    <div class="pack_header ">Cogat 4<sup>th</sup> Grade</div>
+                    <div class="pack_body">Ace the 3rd grade CogAT with our practice tests!</div>
+                    <div class="pack_rate"><img src="Images/star.png">(10)</div>
+                </a>  
+                <a href="#" id="pack5" class="pack card ">
+                    <div class="pack_header">Cogat 5<sup>th</sup> Grade</div>
+                    <div class="pack_body">Ace the 3rd grade CogAT with our practice tests!</div>
+                    <div class="pack_rate"><img src="Images/star.png">(10)</div>
+                </a>
+                <a href="#" id="pack6" class="pack card ">
+                    <div class="pack_header  ">Cogat 6<sup>th</sup> Grade</div>
+                    <div class="pack_body">Ace the 3rd grade CogAT with our practice tests!</div>
+                    <div class="pack_rate"><img src="Images/star.png">(10)</div>
+                </a>  
+                <a href="#" id="pack7" class="pack card ">
+                    <div class="pack_header ">Cogat Verbal Questions</div>
+                    <div class="pack_body">Ace the 3rd grade CogAT with our practice tests!</div>
+                    <div class="pack_rate"><img src="Images/star.png">(10)</div>
+                </a>
+                <a href="#" id="pack8" class="pack card ">
+                    <div class="pack_header ">Cogat Kindergarten</div>
+                    <div class="pack_body">Ace the 3rd grade CogAT with our practice tests!</div>
+                    <div class="pack_rate"><img src="Images/star.png">(10)</div>
+                </a>
+                
+            </div>             
+        </div>     
+    </div>
+    
+    <!-- Main Body of the page -->
+    
+    <div class="container">
+       <div class="row clearfix" id="main">
+            <div class="col-md-8">
+                
+                <div id="carousel" class="carousel slide" data-ride="carousel">
+
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner">
+                            <div class="item active ">
+                                <div>
+                                    <img src="Images/rev1.jpg";>
+                                </div>
+                                <div class="slide_content">
+                                                We got the CogAT practice tests for our daughter. She nailed the test and I would totally recommend TestPrep-Online to other parents.
+                                </div>
+                                <div class="slide_footer">Joan<img src="Images/star.png"></div>
+                            </div>
+                          <div class="item">
+                                <div>
+                                    <img src="Images/rev2.jpg";>
+                                </div>
+                                <div class="slide_content">        
+                                            My son was preparing for CogAT Level 9. With practice, my son got used to the question styles and the practice built his confidence with the exam. Once kids know they can do well, there is no limit – they will always do their best. I have recommended TestPrep-Online to all my friends.                       
+                                </div>
+                                <div class="slide_footer">A.A.<img src="Images/star.png"></div>
+                          </div>
+                          <div class="item">
+                                <div>
+                                    <img src="Images/rev3.jpg";>
+                                </div>
+                                <div class="slide_content">         
+                                            The CogAT test pack provided my son with challenging questions, which prepared him to perform well on the test.                                  
+                                </div>
+                                <div class="slide_footer">A.A.<img src="Images/star.png"></div>
+                          </div>
+                        </div>
+
+                      <a class="left carousel-control" href="#carousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" style="color: red;"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="right carousel-control" href="#carousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" style="color: red;"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                </div>
+                
+                <div id="headLinks"> <!-- --------------------Head------------------------ Links --> 
+                    <ul id="links">
+                        <li><a href="#AboutTheCogAT">About the CogAT</a></li>
+                        <li><a href="#SampleQuestions">Free Cogat Sample Questions</a></li>
+                    </ul>
+                </div>
+                
+                <div id="content"> <!--  -------------------Main Text------------------------ --> 
+                    <h2 id="AboutTheCogAT">About the CogAT</h2>
+                    <p>The Cognitive Abilities Test (CogAT) consists of three batteries: verbal battery, non-verbal battery, and quantitative battery. Each battery contains three sub-tests. 
+
+We have developed different practice packs of the CogAT for different grades. Make sure to check with your school which test your child should be taking. 
+
+You can also take a look at our pages offering more detailed information about the batteries, sample questions, scoring methods, and more. It is important to have all the details about the test before you take it to avoid unnecessary surprises (for example, having less time than planned to solve each question).
+
+The CogAT also has a different form called the CogAT Screening Form. This new test consists of the first sub-test in each battery.
+
+Make sure to check our sample questions for the CogAT. The idea behind the sample questions is to be familiar with the format of the test, the difficulty, and the questions themselves. Sample questions are always good to make a preliminary assessment of your skills. If there is a type of question that you recognize as particularly problematic, then perhaps you should focus your efforts into getting used to that type of question. Conversely, for questions that you can solve more easily, perhaps you will find that the time saved in those questions is good enough to have extra practice, or to overall create a good preparation environment.</p>
+                    <h2 id="SampleQuestions">Free Cogat Sample Questions</h2>
+                    <p> These free samples will allow you to get a feel for the types of questions that appear on the CogAT. Each sample test is followed by answers and detailed explanations for each question.
+
+When buying our practice packs, you get study guides to refresh some of the most challenging topics, a full-length simulation, and you can even get a section with challenging questions for extra practice or an enrichment section. Make sure you go through all the questions before the test. Also, we advise you start practicing with ample time so that you are not pressured and can dedicate the right amount of time to each question.
+
+Ideally, you should take two weeks to prepare for a test having already gathered the information. The study strategy is already something more personal. Some people prefer studying in the morning, first reviewing all the material, and only then going through the questions. Other people prefer trying to solve each question first, reading the explanation if they do not succeed, and if they are stuck, resort to a study guide if the topic is not fresh enough.</p>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/1Arx2By5Rb8" allowfullscreen></iframe>
+                    </div>
+                    <p id="disclaimer">The CCAT, CogAT, and other trademarks are the property of their respective trademark holders. None of the trademark holders are affiliated with TestPrep-Online or this website.</p>
+                </div>
+                <!--  -------------------Reviews------------------------ --> 
+                <div id="reviews" class="row" >  
+                    <h1>Reviews</h1>
+                    <div class="tab-content">
+                        <div class="tab-pane fade in active" id="p1">
+                            <div class="review">
+                                <img src="Images/star.png">
+                                <div class="review-body">"We looked all over the internet for a software to get our kids prepared for their upcoming COG tests as we knew this was something new for them while we were moving to a new country and all schools apply Cognitive tests as part of the admission programs. Our kids are slow learners and their best learning ability is the practice and using this software daily was an extraordinary tool not only to pass their admission test but also to learn to think differently and we have decided to continue using it for longer period as is certainly a strong way for them to do brain gymnastics and train their brain daily. We highly recommend it to those that would like their children (and even adults to exercise the brain with this great tool."</div>
+                                <div class="review-footer">Anonymous - Fri Apr 27 2018</div>
+                            </div> 
+                            <div class="review">
+                                <img src="Images/star.png">
+                                <div class="review-body">"We looked all over the internet for a software to get our kids prepared for their upcoming COG tests as we knew this was something new for them while we were moving to a new country and all schools apply Cognitive tests as part of the admission programs. Our kids are slow learners and their best learning ability is the practice and using this software daily was an extraordinary tool not only to pass their admission test but also to learn to think differently and we have decided to continue using it for longer period as is certainly a strong way for them to do brain gymnastics and train their brain daily. We highly recommend it to those that would like their children (and even adults to exercise the brain with this great tool."</div>
+                                <div class="review-footer">Anonymous - Fri Apr 27 2018</div>
+                            </div>
+                            <div class="review">
+                                <img src="Images/star.png">
+                                <div class="review-body">"We looked all over the internet for a software to get our kids prepared for their upcoming COG tests as we knew this was something new for them while we were moving to a new country and all schools apply Cognitive tests as part of the admission programs. Our kids are slow learners and their best learning ability is the practice and using this software daily was an extraordinary tool not only to pass their admission test but also to learn to think differently and we have decided to continue using it for longer period as is certainly a strong way for them to do brain gymnastics and train their brain daily. We highly recommend it to those that would like their children (and even adults to exercise the brain with this great tool."</div>
+                                <div class="review-footer">Anonymous - Fri Apr 27 2018</div>
+                            </div>
+                        </div>
+                    
+                        <div class="tab-pane fade" id="p2">
+                        <div class="review">
+                        <img src="Images/star.png">
+                        <div class="review-body">"We looked all over the internet for a software to get our kids prepared for their upcoming COG tests as we knew this was something new for them while we were moving to a new country and all schools apply Cognitive tests as part of the admission programs. Our kids are slow learners and their best learning ability is the practice and using this software daily was an extraordinary tool not only to pass their admission test but also to learn to think differently and we have decided to continue using it for longer period as is certainly a strong way for them to do brain gymnastics and train their brain daily. We highly recommend it to those that would like their children (and even adults to exercise the brain with this great tool."</div>
+                        <div class="review-footer">Anonymous - Fri Apr 27 2018</div>
+                    </div>
+                    <div class="review">
+                        <img src="Images/star.png">
+                        <div class="review-body">"We looked all over the internet for a software to get our kids prepared for their upcoming COG tests as we knew this was something new for them while we were moving to a new country and all schools apply Cognitive tests as part of the admission programs. Our kids are slow learners and their best learning ability is the practice and using this software daily was an extraordinary tool not only to pass their admission test but also to learn to think differently and we have decided to continue using it for longer period as is certainly a strong way for them to do brain gymnastics and train their brain daily. We highly recommend it to those that would like their children (and even adults to exercise the brain with this great tool."</div>
+                        <div class="review-footer">Anonymous - Fri Apr 27 2018</div>
+                    </div>
+                    </div>
+                    
+                        <div class="tab-pane fade" id="p3">
+                            <div class="review">
+                            <img src="Images/star.png">
+                            <div class="review-body">
+"I took test prep online subscription for my son's GT testing. The questions on CogAT helped him very much as they are of the same format as what he got at test also. Besides he loves to do that, they are kids friendly and its a lot of fun for them. Although they don't have any customer care line, but their customer support via email is very quick and they always resolved the issue in an hour only. I'm grateful that i took the subscription and i believe that its because of testprep-online that my son is now in GT classes."</div>
+                            <div class="review-footer">Anonymous - Thu May 17 2018</div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                
+
+                <ul class="nav justify-content-center" id="page">
+                  <li >
+                    <a class="nav-link"  data-toggle="pill" disabled="true" id="prev" >&lt;</a>
+                  </li>
+                  <li class="active">
+                    <a class="nav-link" data-toggle="pill" href="#p1">1</a>
+                  </li>
+                  <li >
+                    <a class="nav-link" data-toggle="pill" href="#p2">2</a>
+                  </li>
+                  <li >
+                    <a class="nav-link" data-toggle="pill" href="#p3">3</a>
+                  </li>
+                  <li >
+                    <a class="nav-link" data-toggle="pill" id="next" >&gt;</a>
+                  </li>
+                </ul>
+
+            </div>
+           
+            <div id="sideBar" class="col-md-4">
+                <h2>CogAT Practice Tests</h2>
+                <ul>
+                    <li><a href="#">CogAT Kindergarten</a></li>
+                    <li><a href="#">CogAT Grade 1</a></li>
+                    <li><a href="#">CogAT Grade 2</a></li>
+                    <li><a href="#">CogAT Grade 3</a></li>
+                    <li><a href="#">CogAT Grade 4</a></li>
+                    <li><a href="#">CogAT Grade 5</a></li>
+                </ul>
+                <h2>Free CogAT Sample Tests</h2>
+                <ul>
+                    <li><a href="#">CogAT Kindergarten</a></li>
+                    <li><a href="#">CogAT Kindergarten Sample Test</a></li>
+                    <li><a href="#">CogAT Grade 1 Sample Test</a></li>
+                    <li><a href="#">CogAT Grade 2 Sample Test</a></li>
+                    <li><a href="#">CogAT Grade 3 Sample Test</a></li>
+                    <li><a href="#">CogAT Grade 4 Sample Test</a></li>
+                </ul>
+            </div>
+          </div> 
+           
+       <div class="row">   <!-- Second Row -->
+           <div class="col-12-md">
+               <h2 id="relatedlinkstitle">Related Links</h2>
+               <ul id="links" style="list-style: none; ">
+                   <li><a href="#">About the CogAT</a></li>
+                   <li><a href="#">Free Cogat Sample Questions</a></li>
+                   <li><a href="#">CogAT Question Types</a></li>
+                   <li><a href="#">CogAT Kindergarten</a></li>
+               </ul>
+           </div>
+       </div>                           
+    </div>
+    
+    <div class="container-fluid" id="image" style="display:block;" >
+        <img src="Images/3.png"  align="right" class="img-fluid" alt="Responsive image"><img src="Images/1.png"  class="img-fluid" alt="Responsive image">
+    </div>
+    
+    <!-- The Footer -->
+    
+    <footer class="bg-dark " style="width: 100%">
+        <div class="row" id="row1">
+            <div class=" col-md-3 offset-md-2" style="margin-bottom: 20px">
+            <h2>TestPrep-Online </h2>
+            <hr class="short"/>
+            Since 1992, TestPrep-Online has helped individuals prepare for all kinds of tests. From entrance exams into gifted programs, to assessment tests, and graduate assessment and placement tests, TestPrep-Online can help you prepare and pass.
+            </div>
+            <div class="col col-md-2 shortList">
+                <h2>Company</h2>
+                <hr class="short"/>
+                <ul class="toggle">
+                    <li >About</li>
+                    <li>Privacy</li>
+                    <li>Copyright</li>
+                    <li>All Free Sample Tests</li>
+                </ul>
+            </div>
+            <div class="col col-md-2 shortList">
+                <h2>Help</h2>
+                <hr class="short"/>
+                <ul>
+                    <li>Contact Us</li>
+                    <li>Refund Policy</li>
+                    <li>Terms & Conditions</li>
+                    <li>Success Stories</li>
+                </ul>
+            </div>
+            <div class="col col-md-2 shortList">
+                <h2>Partnership</h2>
+                <hr class="short"/>
+                <ul>
+                    <li>Affiliate Program</li>
+                    <li>Teachers</li>
+                </ul>
+            </div>        
+        </div>
+        <!--  narrow screen footer display -->
+        <div class="col col-md-12 longList" style="display:none ;">
+                <a data-toggle="collapse" href="#collapse1">Company<span class="glyphicon glyphicon-plus "></span></a>
+                <hr class="long"/>
+                <div id="collapse1" class="collapse">
+                    <ul class="list-group">
+                        <li class="list-group-item">About</li>
+                        <li class="list-group-item">Privacy</li>
+                        <li class="list-group-item">Copyright</li>
+                        <li class="list-group-item">All Free Sample Tests</li>
+                    </ul>
+                </div>
+        </div>
+        <div class="col col-md-12 longList" style="display:none ;"> 
+                <a data-toggle="collapse" href="#collapse2">Help<span class="glyphicon glyphicon-plus "></span></a>
+                <hr class="long"/>
+                <div id="collapse2" class="collapse">
+                    <ul class="list-group">
+                        
+                        <li class="list-group-item">Contact Us</li>
+                        <li class="list-group-item">Refund</li>
+                        <li class="list-group-item">Policy</li>
+                        <li class="list-group-item">Terms & Conditions</li>
+                        <li class="list-group-item">Success Stories</li>
+                    </ul>
+                    
+                </div>
+        </div>
+        <div class="col col-md-12 longList" style="display: none ;"> 
+                <a data-toggle="collapse" href="#collapse3">Partnership<span class="glyphicon glyphicon-plus "></span></a>
+                <hr class="long"/>
+                <div id="collapse3" class="collapse">
+                    <ul class="list-group">
+                        <li class="list-group-item">Affiliates</li>
+                        <li class="list-group-item">Program Teachers</li>
+                    </ul>
+                </div>
+        </div>
+            
+        <div class="row" id="row2">
+            <div class="col-md-4 offset-md-2 largeMedia">
+                <img src="Images/fb.png"> <img src="Images/twitter.png"> <img src="Images/youtube.png"> 
+            </div>
+            <div class="col-md-6" id="copyright">
+                Copyright © TestPrep-Online 1992 - 2019 All Rights Reserved | <a href="#">In collabiration with Red</a>
+            </div>
+        </div>
+        <hr class="long"/>
+    </footer>
+
+    <div id="page-cover"></div>
+
+
+    
+    
+
+
+</body>
+</html>
